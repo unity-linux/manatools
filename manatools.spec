@@ -14,7 +14,7 @@ License:       GPLv2+
 Group:         System/Configuration
 # TODO fix url when git is moved accordingly
 Url:           http://gitweb.mageia.org/software/manatools/
-Source0:       http://gitweb.mageia.org/software/manatools/snapshot/%{name}-%{upstream_version}.tar.xz
+Source0:       http://gitweb.mageia.org/software/manatools/snapshot/%{name}-master.tar.xz
 
 Obsoletes:     adminpanel < 1.0.0-1
 
