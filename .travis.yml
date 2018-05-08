@@ -26,6 +26,7 @@ script:
 - find ./${MOCK_CONFIG} -name *.src.rpm
 - find ./${MOCK_CONFIG} -name *.${ARCH}.rpm
 - find ./${MOCK_CONFIG} -name *.noarch.rpm
+- cat $(./${MOCK_CONFIG} -name *.log)
 after_success:
 - sudo -H pip install --upgrade pyOpenSSL ndg-httpsclient pyasn1 requests[security] jinja2 marshmallow copr-cli simplejson
 - scp -o StrictHostKeyChecking=no $(find ./${MOCK_CONFIG} -name "*.rpm" -print|grep -v 'src.rpm') foobar2:rpm_staging/Unity-Linux/${ARCH}/
