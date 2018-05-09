@@ -101,7 +101,7 @@ Requires:       python-yui
 manatools-extra contains some extra modules written in python.
 
 %prep
-%setup -q -n %{name}-%{upstream_version}
+%setup -q -n %{name}-master
 %autopatch -p1
 
 %build
