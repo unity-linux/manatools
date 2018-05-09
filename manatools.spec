@@ -1,13 +1,13 @@
 %define upstream_name    ManaTools
 %define upstream_version 1.1.7
-%define yui_major   7
+%define yui_major   8
 %define internal_ver 0
 
 %global debug_package %{nil}
 
 Name:          manatools
 Version:       %perl_convert_version %{upstream_version}
-Release:       2%{?dist}
+Release:       3%{?dist}
 
 Summary:       ManaTools is a collection of user-friendly system configuration tools
 License:       GPLv2+
